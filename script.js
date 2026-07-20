@@ -5,9 +5,9 @@
 
 const videos = [
     {
-    title: "Hera pheri",
-    video: "videos/hera pheri.mp4",
-    thumbnail: "thumbnails/hera pheri.jpg"
+    title: "Dhamaal 4",
+    video: "videos/Dhamaal 4.mp4",
+    thumbnail: "thumbnails/Dhamaal 4.jpg"
   },
   {
     title: "Movie 1",
