@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium</title>
+
+  <link rel="stylesheet" href="premium.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Close Button -->
+  <button class="close-btn" onclick="history.back()">✕</button>
+  <!-- Header -->
+  <h1 class="title">Premium+ ⭐</h1>
+  <p class="subtitle">Experience the highest quality streaming with VIP features, faster access, and premium benefits.</p>
+
+  <!-- Feature Card -->
+  <div class="feature-card">
+
+    <div class="table-header">
+      <div></div>
+      <div class="pro">👑 Pro</div>
+      <div class="basic">Basic</div>
+    </div>
+
+    <div class="row">
+      <span>Ads-free steaming</span>
+      <span class="yes">✔</span>
+      <span class="yes">✔</span>
+    </div>
+
+    <div class="row">
+      <span>4k-video quality</span>
+      <span class="yes">✔</span>
+      <span class="no">✖</span>
+    </div>
+
+    <div class="row">
+      <span>Offline Download</span>
+      <span class="yes">✔</span>
+      <span class="no">✖</span>
+    </div>
+
+    <div class="row">
+      <span>Multi AI language</span>
+      <span class="yes">✔</span>
+      <span class="no">✖</span>
+    </div>
+
+    <div class="row">
+      <span>High Speed Steaming</span>
+      <span class="yes">✔</span>
+      <span class="no">✖</span>
+    </div>
+
+    <div class="row">
+      <span>Date Sever Mode</span>
+      <span class="yes">✔</span>
+      <span class="no">✖</span>
+    </div>
+
+    <div class="row">
+      <span>PIP Mode</span>
+      <span class="yes">✔</span>
+      <span class="no">✖</span>
+    </div>
+
+    <div class="row">
+      <span>VIP Membership Badge</span>
+      <span class="yes">✔</span>
+      <span class="no">✖</span>
+    </div>
+
+  </div>
+
+  <!-- Slider Dots -->
+  <div class="dots">
+    <span class="active"></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Plans -->
+
+  <div class="plan selected">
+
+    <div>
+      <h2>Yearly</h2>
+      <p>3-Day Free Trial</p>
+    </div>
+
+    <div class="price">
+      ₹99
+      <small>/year</small>
+    </div>
+
+    <div class="badge">
+      53% OFF
+    </div>
+
+  </div>
+
+  <div class="plan">
+
+    <div>
+      <h2>Monthly</h2>
+    </div>
+
+    <div class="price">
+      ₹9
+      <small>/month</small>
+    </div>
+
+  </div>
+
+  <!-- Continue -->
+
+  <button class="continue-btn">
+      Continue
+  </button>
+
+  <p class="cancel">
+      Cancel anytime
+  </p>
+
+  <div class="footer-links">
+
+      <a href="#">Terms of Use</a>
+
+      |
+
+      <a href="#">Privacy Policy</a>
+
+  </div>
+
+</div>
+<!-- Payment Popup -->
+<div id="paymentPopup" class="popup">
+
+  <div class="popup-content">
+
+    <span class="close-popup">&times;</span>
+
+    <h2>Complete Payment</h2>
+
+    <img src="qr.png" class="qr-image" alt="QR Code">
+    <div class="payment-steps">
+    <p><b>STEP 1:</b> SCAN ANY BARCODE</p>
+    <p><b>STEP 2:</b> COMPLETE PAYMENT</p>
+    <p><b>STEP 3:</b> PUT AMOUNT &amp; ORDER / TRANSACTION ID</p>
+    <p><b>STEP 4:</b> CLICK ON PAY BUTTON</p>
+</div>
+
+    <input
+      type="text"
+      id="utr"
+      placeholder="Enter UTR Number"
+    >
+
+    <input
+      type="number"
+      id="amount"
+      placeholder="Enter Amount"
+    >
+
+    <button id="payBtn">
+      Pay
+    </button>
+
+    <p id="successMsg"></p>
+
+  </div>
+
+</div>
+
+<script src="premium.js"></script>
+
+</body>
+</html>
