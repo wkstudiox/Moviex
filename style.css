@@ -1,0 +1,442 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+}
+
+/* Header */
+header{
+    position:sticky;
+    top:0;
+    width:100%;
+    background:#111;
+    padding:15px;
+    text-align:center;
+    border-bottom:2px solid #ff0000;
+    z-index:1000;
+}
+
+header h1{
+    color:#ff0000;
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+/* Main */
+main{
+    padding:15px;
+}
+
+/* Video Card */
+.video-card{
+    background:#1b1b1b;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+/* Video */
+.video-card video{
+    width:100%;
+    display:block;
+    background:#000;
+}
+
+/* Title */
+.video-title{
+    padding:12px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Controls */
+.controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.controls button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    background:#ff0000;
+    color:#fff;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.controls button:hover{
+    background:#cc0000;
+}
+
+.controls input[type=range]{
+    flex:1;
+}
+
+/* Scroll Buttons */
+
+#scrollTopBtn{
+    bottom:90px;
+}
+
+#scrollBottomBtn{
+    bottom:25px;
+}
+
+#scrollTopBtn:hover,
+#scrollBottomBtn:hover{
+    background:#cc0000;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    header h1{
+        font-size:24px;
+    }
+
+    .video-title{
+        font-size:16px;
+    }
+
+    .controls{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .controls button{
+        width:100%;
+    }
+}
+/* ===== Liquid Glass Search Bar ===== */
+
+#searchBox{
+    width:92%;
+    max-width:650px;
+    height:58px;
+    display:block;
+    margin:18px auto;
+    padding:0 20px;
+    font-size:18px;
+    color:#fff;
+
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:50px;
+
+    outline:none;
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,.35),
+        inset 0 1px 1px rgba(255,255,255,.25);
+
+    transition:.35s;
+}
+
+#searchBox::placeholder{
+    color:rgba(255,255,255,.8);
+    font-size:17px;
+}
+
+#searchBox:focus{
+
+    background:rgba(255,255,255,.18);
+
+    border-color:#ff3b3b;
+
+    box-shadow:
+        0 0 25px rgba(255,59,59,.45),
+        inset 0 1px 1px rgba(255,255,255,.3);
+
+    transform:scale(1.02);
+}
+/* ===== Liquid Glass Request Section ===== */
+
+#notFound h3{
+    width:92%;
+    max-width:500px;
+    margin:20px auto;
+    padding:15px;
+    text-align:center;
+    color:#fff;
+    font-size:22px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+#movieRequest{
+    width:92%;
+    max-width:500px;
+    height:58px;
+    margin:15px auto;
+    display:block;
+    padding:0 20px;
+    font-size:18px;
+    color:#fff;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50px;
+    outline:none;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+#movieRequest::placeholder{
+    color:rgba(255,255,255,.8);
+}
+
+#movieRequest:focus{
+    border-color:#ff3b3b;
+    box-shadow:0 0 20px rgba(255,59,59,.45);
+}
+
+#sendBtn{
+    width:220px;
+    height:58px;
+    margin:20px auto;
+    display:block;
+    border:none;
+    border-radius:50px;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+#sendBtn:hover{
+    transform:scale(1.05);
+    background:rgba(255,255,255,.2);
+}
+
+#sendBtn:active{
+    transform:scale(.96);
+}
+/* MovieX Logo */
+
+.logo{
+    position:relative;
+    display:inline-block;
+    margin-left:10px;
+    text-align:left;
+}
+
+.logo h1{
+    margin:0;
+    color:#fff;
+    font-size:34px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.line{
+    position:absolute;
+    height:5px;
+    background:#ff0000;
+    border-radius:20px;
+}
+
+.line1{
+    width:70px;
+    top:-10px;
+    left:0;
+}
+
+.line2{
+    width:70px;
+    bottom:-10px;
+    right:0;
+}
+
+/* Header Left */
+
+header{
+    text-align:left;
+    padding:20px;
+}
+
+
+
+/* From Uiverse.io by satyamchaudharydev */ 
+/* inspired from this svgbackgrounds.com/ */
+.button {
+  width: fit-content;
+  display: flex;
+  padding: 0.8em 1.1em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #880088,
+      #aa2068,
+      #cc3f47,
+      #de6f3d,
+      #f09f33,
+      #de6f3d,
+      #cc3f47,
+      #aa2068,
+      #880088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+
+position: fixed;
+top: 20px;
+right: 40px;
+z-index: 9999;
+}
+
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+
+.button:hover svg {
+  fill: #fff;
+}
+
+.button svg {
+  width: 23px;
+  fill: #f09f33;
+  transition: 0.3s ease;
+}
+/* ===== Liquid Glass Popup ===== */
+
+.popup{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    z-index:99999;
+}
+
+.popup-box{
+    width:340px;
+    max-width:92%;
+    padding:28px;
+
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:28px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.4),
+        inset 0 1px 1px rgba(255,255,255,.35);
+
+    text-align:center;
+}
+
+.popup-logo{
+    width:110px;
+    height:110px;
+    object-fit:contain;
+    margin-bottom:25px;
+}
+
+/* Buttons */
+
+.popup-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.popup-buttons button{
+
+    height:55px;
+
+    border:none;
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.25),
+        inset 0 1px 1px rgba(255,255,255,.3);
+}
+
+#unlockBtn{
+    background:rgba(255,0,0,.25);
+}
+
+#closeBtn{
+    background:rgba(255,255,255,.12);
+}
+
+.popup-buttons button:hover{
+    transform:scale(1.03);
+}
+
+.popup-buttons button:active{
+    transform:scale(.96);
+}
+/* Thumbnail Style - Videos ke badle */
+.movie-thumbnail {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background: #000;
+    border-bottom: 1px solid #333;
+}
+
+.video-card {
+    transition: transform 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.03);
+}
