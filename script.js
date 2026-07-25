@@ -9,9 +9,9 @@ const movies = [
     link: "dhamaal4.html"
   },
   {
-    title: "Movie 1",
-    thumbnail: "movie1.jpg",
-    link: "movie1.html"
+    title: "Bhooth bangla",
+    thumbnail: "Bhooth bangla.jpg",
+    link: "Bhooth bangla.html"
   },
   {
     title: "Movie 2",
