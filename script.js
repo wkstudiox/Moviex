@@ -4,6 +4,11 @@
 
 const movies = [
   {
+    title: "Toy Story 5",
+    thumbnail: "Toy Story 5.jpg",
+    link: "Toy Story 5.html"
+  },
+  {
     title: "Dhamaal 4",
     thumbnail: "dhamaal4.jpg",
     link: "dhamaal4.html"
