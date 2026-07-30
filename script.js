@@ -3,6 +3,11 @@
 // ==============================
 
 const movies = [
+   {
+    title: "Spider man Brand New Day",
+    thumbnail: "SpidermanBrandNewDay.jpg",
+    link: "SpidermanBrandNewDay.html"
+   },
   {
     title: "Toy Story 5",
     thumbnail: "ToyStory5.jpg",
@@ -23,11 +28,6 @@ const movies = [
     thumbnail: "SpiderManHomecoming.jpg",
     link: "SpiderManHomecoming.html"
   },
-  {
-    title: "Movie 3",
-    thumbnail: "movie3.jpg",
-    link: "movie3.html"
-  }
 ];
 
 // ==============================
