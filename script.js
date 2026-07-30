@@ -6,17 +6,17 @@ const movies = [
    {
     title: "Spider man Brand New Day",
     thumbnail: "SpidermanBrandNewDay.jpg",
-    link: "SpidermanBrandNewDay.html"
+    link: "https://youtube.com/shorts/v0cwqv2meZQ?si=n1WADw3CvlK6zhia"
    },
   {
     title: "Toy Story 5",
     thumbnail: "ToyStory5.jpg",
-    link: "ToyStory5.html"
+    link: "https://u.pcloud.link/publink/show?code=XZkCxc5Zi0MBHdwclnpEFMwN7aCYpHYRLi07"
   },
   {
     title: "Dhamaal 4",
     thumbnail: "dhamaal4.jpg",
-    link: "dhamaal4.html"
+    link: "https://u.pcloud.link/publink/show?code=XZ6zor5Z9UshU0I7dtR27aFr0qqrFYoNr6Ry"
   },
   {
     title: "Bhooth bangla",
@@ -26,7 +26,7 @@ const movies = [
   {
     title: "Spider Man Homecoming",
     thumbnail: "SpiderManHomecoming.jpg",
-    link: "SpiderManHomecoming.html"
+    link: "https://u.pcloud.link/publink/show?code=XZ03ic5ZRCJiAxbnfupcywmfu0imf7Q6eIHV"
   },
 ];
 
@@ -48,7 +48,7 @@ movies.forEach(item => {
         <div class="video-title">${item.title}</div>
     `;
     card.onclick = () => {
-    window.location.href = item.link;
+    window.open(item.link, "_blank");
 };
 
     videoList.appendChild(card);
