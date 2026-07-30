@@ -21,7 +21,7 @@ const movies = [
   {
     title: "Bhooth bangla",
     thumbnail: "Bhooth bangla.jpg",
-    link: "Bhooth bangla.html"
+    link: "https://u.pcloud.link/publink/show?code=XZzbnc5Zii7faOmkIPLvmCpTA32sE8U6q5gy"
   },
   {
     title: "Spider Man Homecoming",
