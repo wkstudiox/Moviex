@@ -6,7 +6,7 @@ const movies = [
    {
     title: "Spider man Brand New Day",
     thumbnail: "SpidermanBrandNewDay.jpg",
-    link: "https://youtube.com/shorts/v0cwqv2meZQ?si=n1WADw3CvlK6zhia"
+    link: "https://u.pcloud.link/publink/show?code=XZmMVo5ZEEanacDE9vSYp8pDsnCMWLDKCscV"
    },
   {
     title: "Toy Story 5",
